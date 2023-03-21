@@ -31,6 +31,11 @@ def yearrangefinder(line):
                 linesyear.append(y)
                 
     ##yearrange1.close()
-    print(linesyear)
+    if linesyear == []:
+        print("Your search returned an empty string")
+    else:
+        print(linesyear)
+
+    
 if __name__ == '__main__':
     main()
