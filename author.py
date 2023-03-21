@@ -18,6 +18,10 @@ def authorfinder(line):
             y = y.split('\t')
             listauthorname.append(y)
     ##authorfind.close()
-    print(listauthorname)
+    if listauthorname == []:
+        print("Your search returned 0 lines.")
+    else:
+        print(listauthorname)
+
 if __name__ == '__main__':
     main()
