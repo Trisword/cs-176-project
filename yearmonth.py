@@ -28,6 +28,10 @@ def monthyearfinder(line):
             y = y.split('\t')
             listmonthyears.append(y)
     ##yearmonth.close()
-    print(listmonthyears)
+    if listmonthyears == []:
+        print("Your search returned an empty string")
+    else:
+        print(listmonthyears)
+
 if __name__ == '__main__':
     main()
