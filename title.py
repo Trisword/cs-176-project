@@ -12,8 +12,8 @@ def titlefinder(line):
             listtitles.append(y)
     
     ##titlefind.close()
-    if all (x in listtitles == ''):
-        print("Your search returned an empty list")
+    if listtitles == []:
+        print("Your search returned an empty string")
     else:
         print(listtitles)
 if __name__ == '__main__':
